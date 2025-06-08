@@ -1,0 +1,49 @@
+User: 
+    1. GET: getAllUsers: lists all users ✅
+    2. GET: getUser(Long UserId): gets data on the given user ✅
+    3. GET: getUsesrWithRole(String Role): get all users with the given role  ❌
+    4. GET: getUserWitUsername(String UserName): get user with username ✅
+    5. GET: getCurrentUser(): get currently loggedIn user ✅
+    6. POST: createUser(String UserName, String  Password, String Role): Create user ✅
+    7. PUT: changePassword(String Password): change Password ❌
+
+Queue and Song Play:
+    1. GET: getPlaylist(Long Playlist): get the playlist that is to be played 
+    2. GET: getCurrentSong(): get the song that is being played right now
+    3. GET: getNextSong():  get the next song 
+    4. GET: getPreviousSong():  get the Previous song 
+    5. GET: getEntireQueue(): get the entire Queue
+    6. GET: getShuffledQueue(): get the entire shuffled Queue
+    7. GET: playSong(Long SongId): play the song
+    8. POST: addToQueue(SongId): add song to Queue
+
+    
+Songs and Albums:
+    1. GET: getSong(Long SongId): get all detils of that songs ✅
+    2. GET: getAlbum(Long AlbumId): get all detials of that AlbumId ✅
+    3. GET: getAllSongs(Long UserId): get all songs from user ✅
+    4. GET: getAllSongsFromAlbum(Long AlbumId): get all songs from album ✅
+    5. GET: getAllAlbums(Ling UserId): get all albums from user ✅
+    6. POST: createAlbum(): create an empty Album  ✅
+    7. POST: createSong(String AlbumId): adds song to the album if albumId is not null, else adds an individual song ✅
+    8. DELETE: deleteSong(Long SongId): delete the songs ✅
+    9. DELETE: deleteAlbum(Long AlbumId): delete all songs from that album and then that album ✅
+    10. PUT: updateAlbums(Long AlbumId): update Album ✅
+    11. PUT: updateSong(Long SongsId): update song ✅
+    
+
+CRUD on Playlists:
+    1. GET: getAllPlaylists(Long UserId): get all playlists for the user ✅
+    2. GET: getPlaylistSongs(Long PlaylistId): get all songs for this playlist ✅
+    3. GET: getPlaylist(Long PlaylistId): get details for this playlist ✅
+    4. POST: createPlaylist(): create an empty playlist ✅
+    5. POST: addSongsToPlaylist(Long PlaylistId, Long SongId): add Song to the playlist ✅
+    6. DELETE: deleteSongFromPlaylist(Long PlaylistId, Long SongId): delete Song from the playlist ✅
+    7. DELETE: deletePlaylist(Long PlaylistId): delete playlist ✅
+    8. PUT: updatePlaylist(Long PlaylistId): update the Playlist ✅
+
+Search:
+    1. GET: matchSongName(String searchedString): return all songs that match the string
+    2. GET: matchAlbumName(String searchedString): return all albums that match the string
+    3. GET: matchArtistName(String searchedString): return all artists that match the string
+

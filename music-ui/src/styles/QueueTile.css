@@ -1,0 +1,58 @@
+.queue-tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  height: 60px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  /* margin-left: 15px;
+  margin-top: 15px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  position: relative;
+  cursor: default;
+}
+
+.queue-tile:hover {
+  background-color: #282828;
+  transform: translateY(-1px);
+}
+
+.queue-tile .tile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-tile .tile-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.queue-tile .tile-plays {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.queue-tile .play-icon {
+  font-size: 18px;
+  color: #1db954;
+  opacity: 0.8;
+}
+
+.remove-icon {
+  font-size: 18px;
+  color: #ff4c4c;
+  cursor: pointer;
+  margin-left: 12px;
+  transition: color 0.2s ease;
+}
+
+.remove-icon:hover {
+  color: #ff1a1a;
+}

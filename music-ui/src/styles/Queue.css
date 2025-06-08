@@ -1,0 +1,92 @@
+.queue-container {
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-queue {
+  flex-grow: 1; /* fill remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.queue-tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  height: 60px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+.queue-tile:hover {
+  background-color: #282828;
+  transform: translateY(-1px);
+}
+
+.queue-icon {
+  font-size: 18px;
+  color: #1db954;
+  margin-right: 12px;
+}
+
+.queue-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.queue-artist {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}
+.queue-container {
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-queue {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.queue-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.queue-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* space between tiles */
+  padding-right: 8px; /* optional padding for scrollbar */
+}
