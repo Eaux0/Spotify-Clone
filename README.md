@@ -81,7 +81,7 @@ npm install
 npm start
 ```
 
-Then head over to [http://localhost:3000](http://localhost:3000) in your browser.
+Then head over to [http://localhost:5173/](http://localhost:5173/) in your browser.
 
 ---
 
@@ -90,8 +90,8 @@ Then head over to [http://localhost:3000](http://localhost:3000) in your browser
 Want to explore it right away?
 
 ```
-Username: user1
-Password: password
+Username: alice4
+Password: pass123
 ```
 
 ---
@@ -110,15 +110,9 @@ Each folder is a standalone piece of the app, making the whole system easier to 
 
 ---
 
-## 📸 Screenshots (Coming soon!)
 
-- Want to see what it looks like? Add a few screenshots in a `/screenshots` folder and link them here! \*
-
----
 
 ## 🚀 What's Next?
-
-This was my first full-stack microservices project, but there’s so much more I want to add:
 
 - Real audio streaming 🎶
 - User recommendations based on listening history
